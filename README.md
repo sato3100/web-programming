@@ -1,4 +1,4 @@
 # web-programming
 
-## デプロイしています。
+- デプロイしています。
 https://ne231046.netlify.app/
