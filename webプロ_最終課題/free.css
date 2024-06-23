@@ -1,0 +1,278 @@
+@charset "UTF-8";
+/*--------------------全体(body)--------------------*/
+body {
+    text-align: center;
+    font-family: 'Hannotate SC';
+    background-color: #f4f4f4;
+    color: #3c3c3c;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    width: 980px;
+    margin: 0 auto;
+}
+
+/*--------------------パンくずリスト--------------------*/
+.breadcrumb {
+    font-size: 12px;
+    text-align: left;
+    margin-bottom: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+.breadcrumb li {
+    display: inline;
+    font-weight: bold;
+}
+
+.breadcrumb li:after {
+    content: '>';
+    padding-right: 3px;
+    color: #555;
+}
+
+.breadcrumb li:last-child:after {
+    content: '';
+}
+
+.breadcrumb li a {
+    text-decoration: none;
+    color: #535353;
+}
+
+.breadcrumb li a:hover {
+    text-decoration: underline;
+}
+
+/*--------------------hタグ--------------------*/
+h1 {
+    font-size: 36px;
+    padding: 10px;
+    margin: 15px auto;
+    max-width: 700px;
+}
+
+h2 {
+    margin-bottom: 30px;
+}
+
+/*--------------------p,ol ul,li,td a--------------------*/
+p {
+    padding: 1% 14%;
+    line-height: 180%;
+    margin-bottom: 30px;
+}
+
+ol,ul {
+    padding: 2% 8%;
+}
+
+li {
+    line-height: 180%;
+}
+
+td a {
+    text-decoration: none;
+    color: #3c3c3c;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
+/*---------------------- nav -------------------------*/
+nav {
+    height: 32px;
+    margin-top: 20px;
+    margin-bottom: 7%;
+    padding: 0;
+    text-align: center;
+}
+
+nav h2 {
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    line-height: 100%;
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav ul li {
+    flex: 1 0 auto;
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 200px;
+    text-align: center;
+    font-size: 14px;
+    display: inline;
+}
+
+nav ul li a {
+    border: 1px solid #dedede;
+    padding: 8px 15px;
+    display: block;
+    position: relative;
+    color: #3c3c3c;
+    background-color: #e3f1ff;
+    text-decoration: none;
+    border-radius: 100% 80px / 70px 100%;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #2f2f2f;
+    background-color: #c7e5ff;
+    text-decoration: none;
+}
+
+.firstline a{
+    background-color: #c7e5ff;
+}
+
+.centerline a{
+    background-color: #c7e5ff;
+}
+
+.endline a{
+    background-color: #c7e5ff;
+}
+
+/*--------------------contents--------------------*/
+#contents {
+    font-size: 15px;
+    margin: 0 0 20px 0;
+    list-style-type: none;
+    color: #3c3c3c;
+    text-wrap: balance;
+    word-break: keep-all; 
+    overflow-wrap: anywhere;
+}
+
+#contents a {
+    color: #3c3c3c;
+    background-color: #e3f1ff;
+    text-decoration: none;
+    border: 1px solid #dedede;
+    border-radius: 100% 80px / 70px 100%;
+    padding: 8px 20px;
+}
+
+#contents a:hover {
+    color: #2f2f2f;
+    background-color: #c7e5ff;
+    text-decoration: none;
+}
+
+/*--------------------table--------------------*/
+
+.div1 {
+    position: relative;
+}
+
+.div2 {
+    position: relative;
+    font-size: 12px;
+    display: inline-block;
+    width: 250px;
+    text-wrap: balance;
+    word-break: keep-all; 
+    overflow-wrap: anywhere;
+}
+
+.div {
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    border: 1px solid #d5d5d5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    gap: 8px;
+    text-align: center;
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 68px;
+    font-size: 16px;
+    color: #000;
+    margin: 3% 0 5%;
+}
+
+.parent img {
+    transition: transform .3s ease;
+    border: 1px solid #dedede;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+}
+
+.parent img:hover {
+    transform: scale(1.05);
+}
+
+/*--------------------権利--------------------*/
+small {
+    display: block;
+    text-align: center;
+    margin: 5% 0 3%;
+}
+
+/*--------------------ボタン--------------------*/
+#button {
+    border: 1px solid #dedede;
+    padding: 10px 15px;
+    position: relative;
+    color: #3c3c3c;
+    background-color: #e3f1ff;
+    text-decoration: none;
+    border-radius: 100% 60px / 40px 90%;
+}
+
+#button:hover {
+    color: #2f2f2f;
+    background-color: #c7e5ff;
+    text-decoration: none;
+}
+
+
+/*--------------------トップへ戻る--------------------*/
+#pagetop {
+    position: fixed; 
+    bottom: 20px;
+    right: 23px;
+    margin-bottom: 3%;
+    margin-right: 2%;
+    width: 7em;
+    display: none;
+    background-color: rgb(114, 113, 113);
+    opacity: 0.75;
+    border-radius: 24px;
+    text-align: center;
+    font-size: 120%;
+    font-weight: bold;
+    padding: 10px;
+}
+
+#pagetop a {
+    /* link */
+    color: #ffffff;
+    text-decoration: none;
+}
