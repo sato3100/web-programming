@@ -1,0 +1,243 @@
+@charset "UTF-8";
+/*--------------------全体(body)--------------------*/
+body {
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-attachment: fixed;
+    text-align: center;
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    color: #3c3c3c;
+    margin:0;
+    padding:0;
+}
+
+#container {
+    width:800px;
+    margin:0 auto;
+    border-top:7px solid  #d2e9fd;
+}
+
+/*--------------------hタグ--------------------*/
+h1 {
+    font-size: 36px;
+    padding:20px 10px;
+    border:3px solid #d2e9fd;
+    border-radius: 2em .8em 3em .8em/.8em 3em .8em 2em;
+    width: 80%;
+    margin: 20px auto;
+    max-width: 700px;
+    font-family: 'HanziPen SC';
+}
+
+h4 {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/*--------------------p,ol ul,li--------------------*/
+p {
+    padding: 1rem 2rem;
+    line-height: 1.8rem;  /* 行間の設定 */
+}
+
+ol, ul {
+    padding: 1rem 4rem;
+    text-align: left;
+}
+
+li {
+    line-height: 1.8rem;
+    text-align: left;
+}
+
+/*--------------------キャッチコピー--------------------*/
+.catch_copy{
+    width: 80%;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+/*---------------------- nav -------------------------*/
+nav {
+    height: 32px;
+    margin-bottom: 30px;
+    padding: 0;
+    text-align: center;
+}
+
+nav h2 {
+    display: none;
+}
+
+nav ul {
+    height: auto;
+    margin: 0;
+    padding: 0;
+    line-height: 100%;
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav ul li {
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 200px;
+    text-align: center;
+    font-size: 14px;
+    display: inline;
+}
+
+nav ul li a {
+    border: 1px solid #dedede;
+    padding: 8px 20px;
+    display: block;
+    position: relative;
+    color: #3c3c3c;
+    background-color: #e3f1ff;
+    text-decoration: none;
+}
+
+nav ul li a:link {
+    text-decoration:none;
+}
+
+nav ul li a:visited {
+    text-decoration:none;
+}
+
+nav ul li a:hover {
+    border-color: #d2e9fd;
+    color:#2f2f2f;
+    background-color: #d2e9fd;
+    text-decoration: none;
+}
+
+/*-------------------- メニュー --------------------*/
+.menu-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.menu-table th, .menu-table td {
+    border: thin solid #2f4f4f;
+    padding: 15px;
+    text-align: left;
+}
+
+.menu-table th {
+    color: #2e2e2e;
+    background-color: #d2e9fd;
+}
+
+.menu-table a:link,
+.menu-table a:visited {
+    color: #3366ff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.menu-table a:hover {
+    color: #ff66ff;
+    text-decoration: underline;
+}
+
+.shop-info {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 900px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.shop-info h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #008080; /* カフェのテーマカラーに合わせる */
+}
+
+.shop-info p {
+    font-size: 16px;
+    color: #555;
+}
+
+.shop-info a:link,
+.shop-info a:visited {
+    color: #3366ff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.shop-info a:hover {
+    color: #ff66ff;
+    text-decoration: underline;
+}
+
+
+/*-----------------アクセス-------------------*/
+.contact-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.contact-table th, .contact-table td {
+    border: 1px solid #2f4f4f;
+    padding: 15px;
+    text-align: left;
+}
+
+.contact-table th {
+    background-color: #d2e9fd;
+    color: #2e2e2e;
+}
+
+.contact-table address {
+    font-style: normal;
+}
+
+.contact-table a:link,
+.contact-table a:visited {
+    color: #3366ff;
+    text-decoration: none;
+}
+
+.contact-table a:hover {
+    color: #ff66ff;
+    text-decoration: underline;
+}
+
+/*--------------------リンク--------------------*/
+
+.menu-table a:link,
+.menu-table a:visited,
+.shop-info a:link,
+.shop-info a:visited {
+    color: #3366ff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.menu-table a:hover,
+.shop-info a:hover {
+    color: #ff66ff;
+    text-decoration: underline;
+}
+
+
+/*--------------------権利--------------------*/
+small {
+    display: block;
+    text-align: center;
+    margin: 30px 0px 30px;
+    color: #777;
+}
